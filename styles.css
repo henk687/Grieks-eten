@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 :root {
   --white: #fff;
   --black: #000;
@@ -21,16 +21,17 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 1.5;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 img {
@@ -90,7 +91,7 @@ nav .logo {
   padding: 1rem 0;
   margin-left: 3rem;
   color: var(--white);
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 .nav-link,
@@ -118,7 +119,7 @@ nav .logo {
 }
 
 .hamburger,
-.close{
+.close {
   font-size: 2.5rem;
   color: #fff;
   cursor: pointer;
@@ -141,7 +142,7 @@ nav .logo {
   width: 100%;
   background: url(./images/grieks-eten.jpg) no-repeat;
   background-size: cover;
-	background-position: top center;
+  background-position: top center;
   color: var(--black);
   padding: 0;
   z-index: -2;
@@ -173,7 +174,7 @@ nav .logo {
   line-height: 1;
   margin-bottom: 5rem;
   color: var(--blue);
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .btn {
@@ -209,7 +210,7 @@ nav .logo {
 }
 
 .btn:hover::before {
-  background-color: var(--blue); 
+  background-color: var(--blue);
   transform: translateX(0);
 }
 /* Intro card */
@@ -241,7 +242,7 @@ nav .logo {
 .heading-3 {
   font-size: 2.3rem;
   font-weight: 700;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .card h3 {
@@ -290,7 +291,7 @@ nav .logo {
   font-size: 5rem;
   font-weight: 700;
   margin-top: 4rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .heading p {
@@ -298,8 +299,6 @@ nav .logo {
   font-weight: 700;
   color: var(--blue);
 }
-
-
 
 /* Horizontal line */
 .h-line {
@@ -360,7 +359,7 @@ nav .logo {
   left: 1rem;
   bottom: 1rem;
   color: var(--white);
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   z-index: 11;
 }
 
@@ -384,7 +383,7 @@ nav .logo {
 .dishes-text h3 {
   padding-bottom: 1rem;
   color: var(--blue);
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 .dishes-text p {
@@ -399,13 +398,12 @@ nav .logo {
 .ingredients {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "box1 box2 ."
     ". box3 box4"
     "box5 box6 ."
     ". box7 box8"
-    "box9 box10 ."
-  ;
+    "box9 box10 .";
   row-gap: 2rem;
   column-gap: 2rem;
   margin-top: 2rem;
@@ -544,17 +542,18 @@ footer {
   background-color: var(--white);
   margin: 10% auto;
   width: 70%;
-  box-shadow: 0 5px 8px 0 var(--transparent-black-02), 0 7px 20px 0 var(--transparent-black-017);
+  box-shadow: 0 5px 8px 0 var(--transparent-black-02),
+    0 7px 20px 0 var(--transparent-black-017);
   animation-name: modalopen;
   animation-duration: 1s;
 }
 
 .modal-content h1 {
   margin: 2rem 0;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
-.modal-header h2{
+.modal-header h2 {
   margin: 0;
 }
 
@@ -582,13 +581,18 @@ footer {
   font-size: 3rem;
 }
 
-.closeBtn:hover,.closeBtn:focus {
+.closeBtn:hover,
+.closeBtn:focus {
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
 }
 
 @keyframes modalopen {
-  from{opacity: 0;}
-  to{opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
