@@ -240,7 +240,7 @@ nav .logo {
 }
 
 .heading-3 {
-  font-size: clamp(0.4rem, 8vw, 1rem);
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
@@ -288,7 +288,7 @@ nav .logo {
 }
 
 .heading h2 {
-  font-size: clamp(1rem, 8vw, 2rem);
+  font-size: 1.3rem;
   font-weight: 700;
   margin-top: 4rem;
   letter-spacing: 0.1rem;
@@ -595,4 +595,7 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+@media (max-width: 450px) {
 }
