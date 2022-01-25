@@ -49,6 +49,7 @@ section {
   max-width: 110rem;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow-x: hidden;
 }
 
 img {
